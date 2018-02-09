@@ -39,7 +39,7 @@ deploy:
   repo: Android-MI/Android-MI.github.io
   local_dir: public
   target_branch: master
-  fqdn: http://memmrf.top
+  fqdn: memmrf.top
   project_name: Memmrf.me
   email: 372728569@qq.com
-name: Memmrf.me
+  name: Memmrf.me
