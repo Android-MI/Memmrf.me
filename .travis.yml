@@ -21,6 +21,7 @@ before_script:
 - git config user.email '372728569@qq.com'
 
 before_deploy:
+- hexo clean
 - hexo g
 deploy:
   provider: pages
