@@ -33,6 +33,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: "${GITHUB_TOKEN}"
+  keep-history: true
   on:
     branch: master
   repo: Android-MI/Android-MI.github.io
