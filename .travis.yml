@@ -7,7 +7,6 @@ node_js:
 - '8'
 
 before_install:
-- npm install -g hexo --save
 - npm install -g hexo-cli --save
 - npm install -g hexo-deployer-git --save
 
@@ -25,6 +24,10 @@ script:
 branches:
   only:
   - master
+
+cache:
+  directories:
+    - node_modules
 
 deploy:
   provider: pages
