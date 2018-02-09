@@ -1,23 +1,37 @@
 dist: trusty
 env:
   global:
-  - secure: kc1CAz/HbH4i3RMcjXcmmj8D8navQB+8Qnq/4S5hPuBk2JtFSOt4dokbrRNboiohq/cGDMfBI02O8tS5jsqU0etOveXNBI7mAoNT9zvtEOG40I1QcVOwwuNFwFzyKkijQQUGC64R4x3bGAd2A0JUu2cOn/PEkWWFuudsOgaETgFGU8s7U+6eVHZYMiedD7Zn4rKYd1GdJITw2NLuQb6OtXwBn/Yo5bu3Ap8w8gbBEAThLDPRcOGqp5o03/FoGR4/kv37KLYkV+aETEJzaxBZHa9ZxTnpTKs1HCcdVejYMr2begS0BtB06eva6hZA16AFYpmc455gEaYHlaG7ih9qaWq917beJm2M6Wehmd+CyPXOX9xWyxZcCDcrgjq688dmQotXCad+0PcPBbhdK/tnXvpxN+5YczC3gqlYVATpqWrd7S/fLs1on5YNDJc8HJZwF2ACnZad9zVoXkTaB1Crk9DQDEfivREv5WLmbCdu8Uq35p2in79h0hSeynDHlp3VXhbj/R0TUf191pigTGwq3PxVFbLRaf6KQcsblYU3KuIPUHcICozeDkOkmTd7hxqGJOLs97j6e8byDqcNRMfL2NpqRw8qqvNffsHHrIU3ZvdTU06ae3dzEobGXiRcP4hSTS/Yfd7nt061lVssmTPf0MWqkf2oKBnxeeC3ra50oeI=
+#  - secure: LDvJWRYLzOMnT9ZHuHYpnPY8/IhavhHzMLorTVxP7mhFkX6A94jva5RX/pn1EyjJXPY+ZSA3P9bCYWMkOmkDcgWF+063gQd+UqkQ74ksTPktMDNuVsYx8Hw2XJjKFjIIc71ODx9CpDnA7OBDVFtDnm/QMXAHgpSQmdcr7Kfb6twgttLEF3eKg5siYpoAopbAoDQtKMlv8ChTZP/j30EiStUi+4Mj2jeY9n04I7dLnZV945zBls0TL4jeYCwCTrnNg/skpXwgaw4yL2gzGxQJ3pftJlEGdfwnuDe2iibrVkZ/Xxjrd6LI1pZy+B+rTGvTS969yKVlJA/SMBw76xFpHdGkqJ8TZGeLgRiKOYXNA4dT4CLypmfkAUNHpa3tvHvrsiPhZTzUFjyr+V0ns18flZ+j40DXAndNHtm0eD44TPwPR7w8YKMhYB1wKkfkbrGbqLs+nE9HTP6SivegFQcpl9fHVADtx7bqZTwZ+B6MbPh8vjc75XlhaVcglrEPBulHw/uKZsIDHJ+FI0NNPsTXes5GMsuDj8Jc+S8JhFGr6Nqa5/rlRjba4J0Z+vZMJ4uUc8mmJwnhnINHBHrdyUcoT9ejiKG8QBbvdQx8WgdAcWPU/eGwSdPZZZd/BzKM5ASWIiun6fkd8oMo9e+n0kDbAdC0G5fqB1BwuC5jIwGhty8=
+  - secure: "${GITHUB_TOKEN_SECURE}"
+branches:
+  only:
+  - master
+
 language: node_js
 node_js:
 - '8'
+
+before_install:
+- npm install -g hexo --save
+- npm install -g hexo-cli --save
+- npm install -g hexo-deployer-git --save
+
+before_script:
+- git config user.name 'Android-MI'
+- git config user.email '372728569@qq.com'
+
 before_deploy:
-- hexo generate
+- hexo g
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: "$GITHUB_TOKEN"
+  github_token: "${GITHUB_TOKEN}"
   on:
     branch: master
   repo: Android-MI/Android-MI.github.io
   local_dir: public
   target_branch: master
   fqdn: http://memmrf.top
-  project_name: memmrf.me
+  project_name: Memmrf.me
   email: 372728569@qq.com
-
 name: memmrf.me
