@@ -10,17 +10,17 @@ language: node_js
 node_js:
 - '8'
 
-before_install:
-- npm install -g hexo --save
-- npm install -g hexo-cli --save
-- npm install -g hexo-deployer-git --save
+#before_install:
+#- npm install -g hexo --save
+#- npm install -g hexo-cli --save
+#- npm install -g hexo-deployer-git --save
 
-before_script:
-- git config user.name 'Android-MI'
-- git config user.email '372728569@qq.com'
+#before_script:
+#- git config user.name 'Android-MI'
+#- git config user.email '372728569@qq.com'
 
 before_deploy:
-- hexo clean
+#- hexo clean
 - hexo g
 deploy:
   provider: pages
