@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Memmrf`s Blog
+title: 小米`s Blog
 subtitle: 人可以此生平凡，但不该平庸一生。
 description: 人可以此生平凡，但不该平庸一生。
 author: 小米`s
 language: zh-Hans
 timezone:
-avatar: /images/avatar.gif
+avatar: /avatar.gif
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -74,6 +74,8 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+#plugins: hexo-generate-feed
 
 # Local Search
 search:
