@@ -130,10 +130,11 @@ scheme: Gemini
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
-  GitHub: https://github.com/yourname || github
-  E-Mail: mailto:yourname@gmail.com || envelope
-  Google: https://plus.google.com/yourname || google
-  知乎: http://memmrf.top
+  GitHub: https://github.com/Android-MI || github
+  知乎: https://www.zhihu.com/people/cloudmi/activities
+  简书: https://www.jianshu.com/u/d8106e5c7786
+  掘金: https://juejin.im/user/57b087320a2b58006326a52a
+#  Google: https://plus.google.com/yourname || google
 #  Twitter: https://twitter.com/yourname || twitter
 #  FB Page: https://www.facebook.com/yourname || facebook
 #  VK Group: https://vk.com/yourname || vk
