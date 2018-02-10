@@ -65,7 +65,7 @@ footer:
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   # custom_text Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
-  custom_text:  Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
+  custom_text:
 
 
 # ---------------------------------------------------------------
@@ -148,16 +148,16 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: Links
-links_layout: block
-#links_layout: inline
+links_title: 友情链接
+#links_layout: block
+links_layout: inline
 #links:
-  #Title: http://example.com/
+#  Title: http://example.com/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.png
 # in site  directory(source/uploads): /uploads/avatar.png
-#avatar: /images/avatar.png
+avatar: /images/avatar.gif
 
 # Table Of Contents in the Sidebar
 toc:
@@ -534,9 +534,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: cEX2LGGBgLU9mtvwg9BfDaLy-gzGzoHsz
+  app_key: eOsbpGQ7XIjxgXsMQ6I0xj04
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
