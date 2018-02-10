@@ -41,7 +41,7 @@ keywords: "小米 mi.rufeng memmrf "
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
 #rss:
-rss:
+rss: false
 
 footer:
   # Specify the date when the site was setup.
@@ -64,7 +64,9 @@ footer:
     version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
+  # custom_text Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
+  custom_text:  Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
+
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -127,21 +129,21 @@ scheme: Gemini
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
-  #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
-  #FB Page: https://www.facebook.com/yourname || facebook
-  #VK Group: https://vk.com/yourname || vk
-  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+social:
+  GitHub: https://github.com/yourname || github
+  E-Mail: mailto:yourname@gmail.com || envelope
+  Google: https://plus.google.com/yourname || google
+#  Twitter: https://twitter.com/yourname || twitter
+#  FB Page: https://www.facebook.com/yourname || facebook
+#  VK Group: https://vk.com/yourname || vk
+#  StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
 
 social_icons:
   enable: true
-  icons_only: false
+  icons_only: true
   transition: false
 
 # Blog rolls
@@ -231,9 +233,9 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
-  totalcount: false
+  wordcount: true
+  min2read: true
+  totalcount: true
   separated_meta: true
 
 # Wechat Subscriber
