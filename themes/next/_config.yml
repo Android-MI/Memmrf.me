@@ -133,6 +133,7 @@ social:
   GitHub: https://github.com/yourname || github
   E-Mail: mailto:yourname@gmail.com || envelope
   Google: https://plus.google.com/yourname || google
+  知乎: http://memmrf.top
 #  Twitter: https://twitter.com/yourname || twitter
 #  FB Page: https://www.facebook.com/yourname || facebook
 #  VK Group: https://vk.com/yourname || vk
@@ -143,7 +144,7 @@ social:
 
 social_icons:
   enable: true
-  icons_only: true
+  icons_only: false
   transition: false
 
 # Blog rolls
@@ -191,7 +192,7 @@ sidebar:
   #display: remove
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
-  offset: 12
+  offset: 22
 
   # Back to top in sidebar (only for Pisces | Gemini).
   b2t: false
@@ -226,7 +227,7 @@ auto_excerpt:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
@@ -235,14 +236,14 @@ post_wordcount:
   item_text: true
   wordcount: true
   min2read: true
-  totalcount: true
+  totalcount: false
   separated_meta: true
 
 # Wechat Subscriber
 #wechat_subscriber:
-  #enabled: true
-  #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
-  #description: ex. subscribe to my blog by scanning my public wechat account
+#  enabled: true
+#  qcode: /uploads/wechat-qcode.png
+#  description: 欢迎扫一扫微信公众号，订阅我的博客！
 
 # Reward
 #reward_comment: Donate comment here
@@ -280,7 +281,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # ---------------------------------------------------------------
@@ -554,15 +555,15 @@ busuanzi_count:
   # count values only if the other configs are false
   enable: false
   # custom uv span for the whole site
-  site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
+  site_uv: false
+  site_uv_header: <i class="fa fa-user"></i> 本站访客数
+  site_uv_footer: 人次
   # custom pv span for the whole site
-  site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
+  site_pv: false
+  site_pv_header: <i class="fa fa-eye"></i> 总访问量
+  site_pv_footer: 次
   # custom pv span for one page only
-  page_pv: true
+  page_pv: false
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 

@@ -45,9 +45,9 @@
   <div class="footer-custom">{#
   #}{{ theme.footer.custom_text }}{#
 #}</div>
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-  本站访客数: <span id="busuanzi_value_site_uv"></span>
-</span>
-</div>
 {% endif %}
+
+<div class="theme-info">
+  <div class="powered-by">津ICP备17007097号-1  <i class="fa fa-envira"></i>  <span class="post-count">博客全站共 {{ totalcount(site) }} 字</span></div>
+
+</div>
