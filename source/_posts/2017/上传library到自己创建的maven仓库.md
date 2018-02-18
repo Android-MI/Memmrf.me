@@ -64,4 +64,4 @@ website = ''
 
 发布到bintary 命令
 
-``` ./gradlew clean build bintrayUpload -PbintrayUser=用户名 -PbintrayKey=自己KEY -PdryRun=false```
+` ./gradlew clean build bintrayUpload -PbintrayUser=用户名 -PbintrayKey=自己KEY -PdryRun=false`
