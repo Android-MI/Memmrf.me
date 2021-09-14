@@ -1,7 +1,7 @@
 ---
 title: SpringBoot项目在IDEA中实现热部署
 
-date: 2018-07-29 13:30:12
+date: 2018-01-01 13:30:12
 
 urlname: springboot-hot
 
@@ -10,7 +10,7 @@ updated: 2018-07-30 11:00:12
 tags:
 - Springboot
 
-categories: 
+categories:
 - 工作
 - Springboot
 
@@ -55,7 +55,7 @@ SpringBoot 项目的话，应该是有此配置，加 <configuration> 里面的�
 选中 `Build project automatically`，然后点击  `OK` 保存退出。
 
 2. 使用组合键：`Shift+ALT+Ctrl+/` ，选择`Registry`，回车
-> Mac版  `command + option +shift +/` 
+> Mac版  `command + option +shift +/`
 
 ![Registry-01.png](https://upload-images.jianshu.io/upload_images/1552105-3598a1828697e483.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/740)
 ![Registry-02.png](https://upload-images.jianshu.io/upload_images/1552105-ca65db85c2ae5a1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/940)
